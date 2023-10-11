@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #test1 :first-child {color:red;}
+
+        #test1 :last-child {color:rgb(0, 117, 152);}
+
+        #test1 :nth-child(2) {color:rgb(0, 152, 46);}
+        /*first,=첫번째, last=마지막, nth=번호 호출대로 자식 요소를 수정.*/
+
+        #test2 :last-of-type {color:rgb(28, 160, 170);}
+
+        #test2 p:nth-last-of-type(3) {color:aquamarine;}
+
+        #test3::before{content: "좋은 아침입니다";}
+
+        #test3::after{content: "박채현입니다";}
+    
+        /*css는 띄어쓰기 영향 받음.*/
+
+        #test3:hover{color:blanchedalmond;}
+
+        #test3:active{color:brown;}
+
+
+    </style>
+</head>
+<body>
+    <h2> 일반 구조 선택자</h2>
+    <P>특정한 위치에 있는 태그 선택(위치로 구분)</P>
+    <div id="test1">
+        <p>테스트1</p>
+        <p>테스트1</p>
+        <p>테스트1</p>
+        <p>테스트1</p>
+        <p>테스트1</p>
+        <p>테스트1</p>
+        <pre>테스트1</pre>
+    </div>
+    <hr>
+    <h2>형태 구조 선택자(태그 별로 구분)</h2>
+    <p>특정한 위치에 있는 태그 선택(태그 별로 구분)</p>
+    <div id="test2">
+        <p>테스트1</p>
+        <p>테스트2</p>
+        <p>테스트3</p>
+        <p>테스트4</p>
+        <p>테스트5</p>
+        <pre>테스트6</pre>
+    </div>
+    <div id="test3">안녕하세요</div>
+
+
+</body>
+</html>
